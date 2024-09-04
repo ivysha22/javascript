@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.2s linear;
+}
+body{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+header{
+display: flex;
+justify-content: space-between;
+padding: 14px 22px;
+background-color: aliceblue;
+}
+main{
+    padding: 20px;
+    min-height: 100vh;
+}
+button{
+    padding: 5px 11px;
+    border: none;
+    background-color: black;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+    padding: 7px 13px;
+}
+.dark-header{
+    color: aliceblue;
+    background-color: rgba(0, 0, 0, 0.726);
+}
+.dark-mode-btn{
+    background-color: aliceblue;
+    color: black;
+}
+.dark-main{
+    background-color: rgb(56, 56, 54);
+    color: aliceblue;
+}
