@@ -12,8 +12,47 @@ display: flex;
 justify-content: space-between;
 padding: 14px 22px;
 background-color: aliceblue;
+
+}
+.container{
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin: auto;
+    overflow: hidden;
+}
+.images{
+    display: none;
+    
+}
+.images img{
+    width: 100%;
+    vertical-align: middle;
+}
+.buttons{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.buttons a{
+    background-color: green;
+    color: white;
+    font-weight: 800;
+    padding: 10px;
+    width: 15%;
+    border: none;
+    border-radius: 10px;
+    transition: 0.2 ease;
+    text-align: center;
+}
+.buttons button:hover{
+    cursor: pointer;
+    background-color: rgb(121, 194, 121);
+    transition: all 0.4s ease-in-out;
+    color: black;
 }
 main{
+    width: 100%;
     padding: 20px;
     min-height: 100vh;
 }
@@ -39,4 +78,41 @@ a{
 .dark-main{
     background-color: rgb(56, 56, 54);
     color: aliceblue;
+}
+/* sign in modal */
+.modal{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.454);
+    z-index: 100;
+    
+}
+.modal form{
+    background-color: white;
+    width: 40%;
+    padding: 20px;
+    border-radius: 11px;
+    display: flex;
+    flex-direction: column;
+    margin: 100px auto;
+    gap: 18px;
+    
+}
+#close{
+    align-self: flex-end;
+    background-color: red;
+    color: aliceblue;
+
+}
+.modal input , .modal button{
+    border-radius: 8px;
+    padding: 10px;
+    font: inherit;
+}
+.modal button[type="submit"]{
+    background-color: green;
+    color: white;
+}
+.hidden{
+    display: none;
 }
